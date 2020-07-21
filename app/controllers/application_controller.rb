@@ -18,7 +18,11 @@ class ApplicationController < Sinatra::Base
     erb :new
   end
   
+<<<<<<< HEAD
    post '/articles' do 
+=======
+   '/articles' do 
+>>>>>>> dd4e0276453deb39bea0af71de03eb237beec108
     title = params[:title]
     content = params[:content]
     @article = Article.create(title: title, content: content)
